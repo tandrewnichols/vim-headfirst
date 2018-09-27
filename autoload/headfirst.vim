@@ -6,7 +6,9 @@ function! headfirst#complete(lead, ...)
 endfunction
 
 function! headfirst#open(cmd, ...) abort
-  for arg in a:000
+  let files = a:000
+  let files = reverse(files)
+  for arg in files
     exec a:cmd "%:h/" . arg
   endfor
 endfunction
