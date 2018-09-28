@@ -1,0 +1,133 @@
+*headfirst.txt* Commands to quickly open sibling files in vim
+
+INTRODUCTION                                     *headfirst*
+
+Commands to quickly open sibling files in vim
+
+CONTENTS                                         *headfirst-contents*
+
+  1.  Overview                                   |headfirst-overview|
+  2.  Installation                               |headfirst-installation|
+  3.  Usage                                      |headfirst-usage|
+  4.  Issues                                     |headfirst-issues|
+  5.  Contributing                               |headfirst-contributing|
+  6.  Version                                    |headfirst-version|
+  7.  License                                    |headfirst-license|
+
+OVERVIEW                                         *headfirst-overview*
+
+This plugin is a small wrapper around `:e`, `:sp`, `:vsp`, and `:tabe` for
+editing sibling files. That is, it's comparable to typing `:e %:h/<Tab>`, but
+it also let's you supply multiple files to open.
+
+INSTALLATION                                     *headfirst-installation*
+
+  1. Manual
+
+     Clone this repository and copy the files in plugin/, autoload/, and doc/
+     to their respective directories in your vimfiles, or copy the text from
+     the github repository into new files in those directories. Make sure to
+     run `:helptags`.
+
+  2. Plug <https://github.com/junegunn/vim-plug>
+
+     Add the following to your vimrc, or something sourced therein: >
+
+     Plug 'tandrewnichols/vim-headfirst'
+<
+     Then install via `:PlugInstall`
+
+  3. Vundle <https://github.com/gmarik/Vundle.vim>
+
+     Add the following to your vimrc, or something sourced therein: >
+
+     Plugin 'tandrewnichols/vim-headfirst'
+<
+     Then install via `:BundleInstall`
+
+  4. NeoBundle <https://github.com/Shougo/neobundle.vim>
+
+     Add the following to your vimrc, or something sourced therein: >
+
+     NeoBundle 'tandrewnichols/vim-headfirst'
+<
+     Then install via `:BundleInstall`
+
+  5. Pathogen <https://github.com/tpope/vim-pathogen> >
+
+     cd ~/.vim/bundle
+     git clone https://github.com/tandrewnichols/vim-headfirst.git
+<
+     Then run `:Helptags`
+
+USAGE                                            *headfirst-usage*
+
+Using the following commands to edit sibling files in the corresponding
+windows. Tab completion works as normal. All of these commands accept multiple
+sibling files.
+
+                                                 *headfirst-:He*
+                                                 *headfirst-:Hedit*
+Edit a sibling file in the current window.
+>
+  :He foo.js
+<
+                                                 *headfirst-:Hsp*
+                                                 *headfirst-:Hsplit*
+Edit a sibling file in a split.
+>
+  :Hsp foo.js bar.js
+<
+                                                 *headfirst-:Hvsp*
+                                                 *headfirst-:Hvsplit*
+Edit a sibling file in a vertical split.
+>
+  :Hvsp foo.js
+<
+
+                                                 *headfirst-:Htabe*
+                                                 *headfirst-:Htabedit*
+Edit a sibling file in a new tab.
+>
+  :Htabe foo.js bar.js baz.js
+  
+ISSUES                                           *headfirst-issues*
+
+If you experience issues using vim-headfirst, please report them at
+<https://github.com/tandrewnichols/vim-headfirst/issues>.
+
+CONTRIBUTING                                     *headfirst-contributing*
+
+I always try to be open to suggestions, but I do still have opinions about what
+this should and should not be so . . . it never hurts to ask before investing a
+lot of time on a patch.
+
+VERSION                                          *headfirst-version*
+
+Version 1.0.0
+
+LICENSE                                          *headfirst-license*
+
+The MIT License (MIT)
+
+Copyright (c) 2018 Andrew Nichols
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+vim:tw=78:ts=2:ft=help:norl:
