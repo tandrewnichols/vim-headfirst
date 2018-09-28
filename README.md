@@ -59,7 +59,7 @@ Using the following commands to edit sibling files in the corresponding windows.
 Edit a sibling file in the current window.
 
 ```vim
-:He foo.vim
+:He foo.js
 ```
 
 ### :Hsp/:Hsplit
@@ -69,7 +69,7 @@ Edit a sibling file in a split.
 ```vim
 " All these commands accept multiple sibling files, although it may not make sense to ":edit"
 " multiple files at the same time. It's basically like preloading the additional ones.
-:Hsp foo.vim bar.vim
+:Hsp foo.js bar.js
 ```
 
 ### :Hvsp/:Hvsplit
@@ -77,7 +77,7 @@ Edit a sibling file in a split.
 Edit a sibling file in a vertical split.
 
 ```vim
-:Hvsp foo.vim
+:Hvsp foo.js
 ```
 
 ### :Htabe/:Htabedit
@@ -85,7 +85,7 @@ Edit a sibling file in a vertical split.
 Edit a sibling file in a new tab.
 
 ```vim
-:Htabe foo.vim bar.vim baz.vim
+:Htabe foo.js bar.js baz.js
 ```
 
 ## Contributing
