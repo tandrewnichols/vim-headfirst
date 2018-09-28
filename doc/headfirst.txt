@@ -1,4 +1,4 @@
-*headfirst.txt* Commands to quickly open sibling files in vim
+*headfirst.txt* Edit sibling files like a boss
 
 INTRODUCTION                                     *headfirst*
 
